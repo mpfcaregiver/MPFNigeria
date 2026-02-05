@@ -1,18 +1,18 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ShieldCheck, 
-  Heart, 
-  Users, 
-  ChevronRight, 
-  Play, 
-  BookOpen, 
-  Award, 
-  Target, 
-  Phone, 
-  Mail, 
-  MapPin, 
+import {
+  ShieldCheck,
+  Heart,
+  Users,
+  ChevronRight,
+  Play,
+  BookOpen,
+  Award,
+  Target,
+  Phone,
+  Mail,
+  MapPin,
   Star,
   Zap
 } from 'lucide-react';
@@ -23,14 +23,14 @@ const Home: React.FC = () => {
       {/* 1. HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-105 animate-pulse-slow">
-          <img 
-            src="https://i.ibb.co/FkQbmqpF/MPF.jpg" 
-            alt="Military personnel in prayer" 
-            className="w-full h-full object-cover brightness-[0.35]" 
+          <img
+            src="https://i.ibb.co/FkQbmqpF/MPF.jpg"
+            alt="Military personnel in prayer"
+            className="w-full h-full object-cover brightness-[0.35]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-army/70 via-transparent to-black/80"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <div className="animate-in fade-in slide-in-from-bottom-12 duration-1000">
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 backdrop-blur-md border border-emerald-500/30 px-6 py-2 rounded-full mb-8 shadow-2xl">
@@ -42,11 +42,11 @@ const Home: React.FC = () => {
               Military Prayer <br className="hidden md:block" />
               <span className="text-emerald-400">Fellowship</span>
             </h1>
-            
+
             <p className="text-xl md:text-3xl font-black mb-10 text-white uppercase tracking-[0.2em] opacity-90">
               Hear Their Cry Prayer Fellowship
             </p>
-            
+
             <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-sm border-y border-white/10 py-10 mb-12 transform -skew-x-2">
               <h3 className="text-2xl md:text-6xl font-oswald italic font-bold text-white uppercase tracking-tighter leading-none">
                 “IT’S NOT THE GUNS <span className="text-emerald-500 underline decoration-army underline-offset-8">BUT GOD</span> THAT SAVES.”
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
             </div>
 
             <p className="text-sm md:text-lg max-w-3xl mx-auto mb-12 text-gray-300 leading-relaxed font-bold uppercase tracking-wide">
-              Standing in the gap for military personnel through prayer, evangelism, 
+              Standing in the gap for military personnel through prayer, evangelism,
               and holistic spiritual support across the globe.
             </p>
 
@@ -78,14 +78,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* 2. INTRODUCTION SECTION */}
-      <section className="py-32 bg-white relative">
+      <section className="py-12 md:py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative group order-2 lg:order-1">
             <div className="absolute -inset-4 bg-army/5 rounded-[2.5rem] -rotate-2 group-hover:rotate-0 transition-transform duration-700"></div>
-            <img 
-              src="https://i.ibb.co/qYdQqtkx/MPF-1.jpg" 
-              className="relative z-10 rounded-3xl shadow-2xl border-2 border-army/10 w-full object-cover" 
-              alt="Soldiers praying gathering" 
+            <img
+              src="https://i.ibb.co/qYdQqtkx/MPF-1.jpg"
+              className="relative z-10 rounded-3xl shadow-2xl border-2 border-army/10 w-full object-cover"
+              alt="Soldiers praying gathering"
             />
             <div className="absolute -bottom-10 -right-10 z-20 bg-army p-10 rounded-2xl shadow-2xl text-white hidden md:block border-b-8 border-emerald-500">
               <Zap className="mb-4 text-emerald-400" size={32} />
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
             </h2>
             <div className="space-y-8 text-gray-700 text-lg md:text-xl leading-relaxed font-medium">
               <p>
-                The <strong>Military Prayer Fellowship (MPF) Nigeria/Diaspora</strong> is the Paramilitary Mission and Evangelism arm of 
+                The <strong>Military Prayer Fellowship (MPF) Nigeria/Diaspora</strong> is the Paramilitary Mission and Evangelism arm of
                 <strong> Hear Their Cry Prayer Fellowship Inc. (CAC No. 8416265).</strong>
               </p>
               <p className="border-l-4 border-army pl-8 italic text-army bg-army/5 py-6 rounded-r-2xl">
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* 3. FOUNDING & LEADERSHIP */}
-      <section className="py-32 bg-gray-50 border-y border-gray-100">
+      <section className="py-12 md:py-32 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-20 items-start">
             <div className="lg:w-1/2">
@@ -159,10 +159,10 @@ const Home: React.FC = () => {
       {/* 4. SPIRITUAL STAND */}
       <section className="relative py-40 text-white text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://i.ibb.co/G43tJV6S/MPF-5.jpg" 
-            className="w-full h-full object-cover brightness-[0.4] scale-110" 
-            alt="Altar prayer" 
+          <img
+            src="https://i.ibb.co/G43tJV6S/MPF-5.jpg"
+            className="w-full h-full object-cover brightness-[0.4] scale-110"
+            alt="Altar prayer"
           />
           <div className="absolute inset-0 bg-army/30 backdrop-blur-[2px]"></div>
         </div>

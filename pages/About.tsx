@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ShieldCheck, 
-  Target, 
-  Users, 
-  BookOpen, 
-  Heart, 
-  Award, 
-  Shield, 
+import {
+  ShieldCheck,
+  Target,
+  Users,
+  BookOpen,
+  Heart,
+  Award,
+  Shield,
   Star,
   Zap,
   Phone,
@@ -54,10 +54,10 @@ const About: React.FC = () => {
       {/* 1. PAGE HERO SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://i.ibb.co/DPgrCpcQ/MPF-6.jpg" 
-            alt="Military personnel mission" 
-            className="w-full h-full object-cover brightness-[0.35]" 
+          <img
+            src="https://i.ibb.co/DPgrCpcQ/MPF-6.jpg"
+            alt="Military personnel mission"
+            className="w-full h-full object-cover brightness-[0.35]"
           />
           <div className="absolute inset-0 bg-army/40"></div>
         </div>
@@ -96,35 +96,45 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <img 
-              src="https://i.ibb.co/qLWzmy8p/MPF-9.jpg" 
-              className="rounded-3xl shadow-2xl border-2 border-army/10 object-cover w-full h-full" 
-              alt="MPF Mission Fellowship" 
+            <img
+              src="https://i.ibb.co/qLWzmy8p/MPF-9.jpg"
+              className="rounded-3xl shadow-2xl border-2 border-army/10 object-cover w-full h-full"
+              alt="MPF Mission Fellowship"
             />
           </div>
         </div>
       </section>
 
-      {/* 3. OUR FOUNDING VISION */}
+      {/* 3. ABOUT DR. DOMINION D. DOM (APOSTLE) */}
       <section className="py-24 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2">
-            <img 
-              src="https://i.ibb.co/YwWfBNk/MPF-14.jpg" 
-              className="rounded-3xl shadow-2xl border-2 border-army/10" 
-              alt="Founding vision of MPF" 
+            <img
+              src="https://i.ibb.co/YwWfBNk/MPF-14.jpg"
+              className="rounded-3xl shadow-2xl border-2 border-army/10"
+              alt="Dr. Dominion D. Dom (Apostle)"
             />
           </div>
           <div className="lg:w-1/2">
             <h2 className="text-4xl font-black text-army uppercase mb-8 border-b-4 border-army pb-2 inline-block">
-              Our Founding Vision
+              About Dr. Dominion D. Dom (Apostle)
             </h2>
             <div className="space-y-6 text-gray-700 text-lg leading-relaxed font-medium">
               <p>
-                The vision of MPF was given to <strong>Dr. Dominion D. Dom (Apostle)</strong>, a one-time NCC 2nd Lt. Chaplain Officer with over 16 years of service experience in Delta State.
+                Apostle Dr. Dominic Denedo Dominion is a seasoned and renowned gospel preacher with over four decades of ministry experience. He is a prolific writer, with numerous Christian books to his credit, and a passionate servant of God committed to AltarPrayers, discipleship, and kingdom impact.
               </p>
               <p>
-                Recognizing the unique spiritual and emotional needs of soldiers and their families, he approached <strong>MWO Rev. Dr. Butswat Istifanus Hausa (Rtd.)</strong>, who was then serving as JTF Chaplain at St. James 93 and later 3 Battalion, Effurun Barracks, Warri, with the vision of establishing a prayer-based support fellowship for military personnel.
+                He leads a registered dedicated body (ORGANIZATION) of Christian soldiers (clergy) known as “Hear Their Cry Prayer Fellowship” Inc., also called Military Prayer Fellowship (MPF) Nigeria/Diaspora. MPF is a prayer-driven fellowship committed to serving members of the military community in Nigeria and across the diaspora as CARE-GIVERS, intercessors, and spiritual support partners.
+              </p>
+              <p>
+                As the Chairman and Founder of MPF Nigeria/Diaspora, Apostle Dr. Dominion has established MPF chapters across Nigeria and overseas with membership stretching over a hundred at it's first year of conception.
+              </p>
+              <p>
+                He is also the Founder and Senior Pastor of Opete Altar Prayer Mountain Inc, a ministry devoted to prayer, revival, and spiritual restoration.
+                In addition, he is the CEO of Hear Their Cry Dominic Dominion AltarPrayer Foundation, an Orphanage Children’s Home located in Udu/Warri, Delta State, Nigeria, dedicated to caring for vulnerable children, widows and old people, restoring hope.
+              </p>
+              <p>
+                Apostle Dr. Dominic Denedo Dominion is a devoted family man, happily married to Rev. (Mrs) Dominion Favour Emoyoma, and they are blessed with three grown children.
               </p>
             </div>
           </div>
@@ -178,19 +188,19 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block p-3 bg-white rounded-2xl shadow-sm mb-4">
-               <Medal className="text-army" size={32} />
+              <Medal className="text-army" size={32} />
             </div>
             <h2 className="text-4xl font-black text-army uppercase mb-4">Commissioned Officers & Pillars</h2>
             <p className="text-gray-500 font-bold uppercase text-[10px] tracking-[0.3em]">Recognition of Service and Impact</p>
             <div className="w-24 h-1 bg-army mx-auto mt-6"></div>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
             {leadershipImages.map((url, index) => (
               <div key={index} className="group relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg border-2 border-white hover:border-army transition-all transform hover:-translate-y-1">
-                <img 
-                  src={url} 
-                  alt={`MPF Officer ${index + 1}`} 
+                <img
+                  src={url}
+                  alt={`MPF Officer ${index + 1}`}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -201,10 +211,10 @@ const About: React.FC = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-16 text-center">
             <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest max-w-2xl mx-auto leading-relaxed">
-              These are the dedicated men and women standing as pillars of the Military Prayer Fellowship, 
+              These are the dedicated men and women standing as pillars of the Military Prayer Fellowship,
               ensuring the vision reaches every barrack and military community.
             </p>
           </div>
@@ -214,10 +224,10 @@ const About: React.FC = () => {
       {/* 5. OUR SPIRITUAL STAND */}
       <section className="relative py-32 text-white text-center">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://i.ibb.co/qLWzmy8p/MPF-9.jpg" 
-            className="w-full h-full object-cover brightness-[0.45]" 
-            alt="Worship raised hands at the altar" 
+          <img
+            src="https://i.ibb.co/qLWzmy8p/MPF-9.jpg"
+            className="w-full h-full object-cover brightness-[0.45]"
+            alt="Worship raised hands at the altar"
           />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -264,7 +274,7 @@ const About: React.FC = () => {
                   {React.cloneElement(item.icon, { size: 32 })}
                 </div>
                 <p className="text-gray-700 font-bold uppercase text-sm leading-relaxed">
-                  <span className="text-army mr-2 text-xl font-black">{i+1}.</span> {item.text}
+                  <span className="text-army mr-2 text-xl font-black">{i + 1}.</span> {item.text}
                 </p>
               </div>
             ))}
@@ -276,10 +286,10 @@ const About: React.FC = () => {
       <section className="py-24 bg-army text-white">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <img 
-              src="https://i.ibb.co/wFc8Qq6R/MPF-7.jpg" 
-              className="rounded-3xl shadow-2xl border-2 border-white/20 object-cover" 
-              alt="Barracks outreach" 
+            <img
+              src="https://i.ibb.co/wFc8Qq6R/MPF-7.jpg"
+              className="rounded-3xl shadow-2xl border-2 border-white/20 object-cover"
+              alt="Barracks outreach"
             />
             <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-xl shadow-2xl text-army hidden md:block">
               <Zap className="mb-2 text-emerald-600" />
@@ -292,7 +302,7 @@ const About: React.FC = () => {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed font-medium">
               <p>
-                MPF’s primary outreach focus is the <strong>Nigerian Army</strong>. 
+                MPF’s primary outreach focus is the <strong>Nigerian Army</strong>.
                 By extension, MPF also reaches out to:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -348,10 +358,10 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <img 
-              src="https://i.ibb.co/tpNbmHc0/MPF-12.jpg" 
-              className="rounded-3xl shadow-2xl border-2 border-army/10 object-cover w-full" 
-              alt="Military checkpoint prayer and outreach" 
+            <img
+              src="https://i.ibb.co/tpNbmHc0/MPF-12.jpg"
+              className="rounded-3xl shadow-2xl border-2 border-army/10 object-cover w-full"
+              alt="Military checkpoint prayer and outreach"
             />
           </div>
         </div>
@@ -361,10 +371,10 @@ const About: React.FC = () => {
       <section className="py-24 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="mb-12">
-            <img 
-              src="https://i.ibb.co/6JDLgTLF/MPF-13.jpg" 
-              className="w-full h-64 object-cover rounded-3xl shadow-2xl mb-12" 
-              alt="Fellowship gathering prayer mountain" 
+            <img
+              src="https://i.ibb.co/6JDLgTLF/MPF-13.jpg"
+              className="w-full h-64 object-cover rounded-3xl shadow-2xl mb-12"
+              alt="Fellowship gathering prayer mountain"
             />
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-army uppercase mb-8 tracking-tighter">
