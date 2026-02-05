@@ -1,0 +1,9 @@
+# Robots.txt for MPF Nigeria/Diaspora
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://mpf-nigeria.org/sitemap.xml
+
+# Note: Update domain when deploying to production
+# For Netlify demo, replace with: https://your-site-name.netlify.app/sitemap.xml

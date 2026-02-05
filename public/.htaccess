@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+  # Enable rewrite engine
+  RewriteEngine On
+  RewriteBase /
+  
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
+  # Handle BrowserRouter - fixes 404 on hard refresh
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Security Headers
+  Header always set X-Frame-Options "DENY"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  
+  # Content Security Policy
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://esm.sh; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.tailwindcss.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+  
+  # HTTPS Enforcement (HSTS)
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+</IfModule>
