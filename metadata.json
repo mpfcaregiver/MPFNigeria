@@ -1,0 +1,8 @@
+{
+  "name": "Military Prayer Fellowship (MPF)",
+  "description": "Official website for Hear Their Cry Prayer Fellowship: MPF Nigeria/Diaspora.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
